@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3B01D9192DA5FF4A00D37754 /* ProgressCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B01D9182DA5FF4A00D37754 /* ProgressCircleView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		3B01D9012DA4A57000D37754 /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B01D9182DA5FF4A00D37754 /* ProgressCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +37,7 @@
 		3B01D8F82DA4A57000D37754 = {
 			isa = PBXGroup;
 			children = (
+				3B01D9182DA5FF4A00D37754 /* ProgressCircleView.swift */,
 				3B01D9032DA4A57000D37754 /* FitnessApp */,
 				3B01D9022DA4A57000D37754 /* Products */,
 			);
@@ -119,6 +125,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B01D9192DA5FF4A00D37754 /* ProgressCircleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

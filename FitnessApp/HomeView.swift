@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @State var calories: Int = 123
+    @State var activeTime: Int = 52
+    @State var standTime: Int = 8
+    
     var body: some View {
         ScrollView(showsIndicators: false){
             VStack {
@@ -22,7 +27,17 @@ struct HomeView: View {
                         HomeHistoricData(title: "Stand", value: "8 hours", indicationColor: .blue)
                     }
                     Spacer()
+                    ZStack {
+                        ProgressCircleView(progress: $calories, goal: 600, color: .red)
+                        ProgressCircleView(progress: $activeTime, goal: 60, color: .green)
+                            .padding(.all, 20)
+                        ProgressCircleView(progress: $standTime, goal: 12, color: .blue)
+                            .padding(.all, 40)
+                    }
+                    .padding(.horizontal)
+                    Spacer()
                 }
+                .padding()
             }
         }
     }
