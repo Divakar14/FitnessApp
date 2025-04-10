@@ -20,6 +20,13 @@ struct HomeView: View {
         Activity (id: 3, name: "Today's Steps", goal: "50, 000", imageName: "figure.walk", amount: "55, 812", tintColor: .green),
         ]
     
+    var mockWorkouts = [
+        Workout(id: 0, imageName: "figure.run", title: "Running", duration: "47 mins", calories: "327 kCal", date: "Apr 10", tintColor: .green),
+        Workout(id: 1, imageName: "figure.run", title: "Strength Training", duration: "47 mins", calories: "327 kCal", date: "Apr 10", tintColor: .red),
+        Workout(id: 2, imageName: "figure.walk", title: "Walk", duration: "47 mins", calories: "327 kCal", date: "Apr 10", tintColor: .purple),
+        Workout(id: 3, imageName: "figure.run", title: "Running", duration: "47 mins", calories: "327 kCal", date: "Apr 10", tintColor: .cyan),
+    ]
+    
     var body: some View {
         NavigationStack {
             ScrollView(showsIndicators: false){
@@ -82,6 +89,13 @@ struct HomeView: View {
                         }
                     }
                     .padding(.horizontal)
+                    .padding(.top)
+                    LazyVStack {
+                        ForEach(mockWorkouts, id: \.id) { workout in
+                            WorkoutCard(workout: workout)
+                        }
+                    }
+                    .padding(.bottom)
                 }
             }
         }
