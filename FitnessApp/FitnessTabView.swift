@@ -11,14 +11,6 @@ struct FitnessTabView: View {
     
     @State var selectedTab = "Home"
     
-    init() {
-        let appearance = UITabBarAppearance()
-        appearance.configureWithOpaqueBackground()
-        appearance.stackedLayoutAppearance.selected.iconColor = .systemMint
-        appearance.stackedLayoutAppearance.selected.titleTextAttributes = [.foregroundColor: UIColor.label]
-        UITabBar.appearance().scrollEdgeAppearance = appearance
-    }
-    
     var body: some View {
         TabView(selection: $selectedTab) {
             HomeView()
@@ -34,6 +26,7 @@ struct FitnessTabView: View {
                     Text("Charts")
                 }
         }
+        .accentColor(.mint)
     }
 }
 
