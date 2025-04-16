@@ -10,22 +10,9 @@
 		3B01D9012DA4A57000D37754 /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		3B01D96D2DAECE4500D37754 /* Exceptions for "FitnessApp" folder in "FitnessApp" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 3B01D9002DA4A57000D37754 /* FitnessApp */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3B01D9032DA4A57000D37754 /* FitnessApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				3B01D96D2DAECE4500D37754 /* Exceptions for "FitnessApp" folder in "FitnessApp" target */,
-			);
 			path = FitnessApp;
 			sourceTree = "<group>";
 		};
